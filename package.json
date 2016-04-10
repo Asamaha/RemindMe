@@ -1,0 +1,36 @@
+{
+  "name": "Reminder",
+  "version": "0.0.0",
+  "description": "Reminders for everyone every way",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "4.2.1",
+    "npm": "3.3.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asamaha/Reminder.git"
+  },
+  "author": "Adam Samaha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Asamaha/Reminder/issues"
+  },
+  "homepage": "https://github.com/Asamaha/Reminder#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "kue": "^0.10.4",
+    "kue-ui": "^0.1.0",
+    "moment-timezone": "^0.4.1",
+    "mtextbelt": "^0.2.0",
+    "nodemailer": "^1.10.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.6.1"
+  }
+}
