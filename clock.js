@@ -22,3 +22,9 @@ queue.on('job enqueue', function(id, type) {
     });
   });
 });
+
+// Send email when job with type 'email' is ready
+queue.process('email', function(job, done) {
+  console.log('Processing job #', job.id, ':\n', job.data);
+  sendEmail(job.data.to, job.data.message, done);
+});
