@@ -21,4 +21,16 @@ module.exports = function(email, message, cb) {
       pass: gmailPass,
     },
   });
+
+  // setup email data
+  var mailOptions = {
+    from: 'rmindr dev <rmindrdev@gmail.com>',
+    to: email,
+    subject: 'Reminder from Rmindr',
+    text: message,
+  };
+
+  transporter.sendMail(mailOptions, function(error, info) {
+    cb(error, info);
+  });
 };
