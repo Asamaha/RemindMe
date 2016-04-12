@@ -1,4 +1,4 @@
-# Reminder
+# [Reminder](http://rmindr.herokuapp.com/)
 
 ## Table of Contents
 
